@@ -1,0 +1,199 @@
+::-webkit-scrollbar {
+  /*CUSTOM SCROLLBAR*/
+  background-color: #eee;
+  width: 8px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #24263e;
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  font-family: Verdana, sans-serif;
+}
+
+html {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: #e2e2e2;
+}
+
+h1 {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.page-wrapper {
+  /*PAGE-WRAPPER*/
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+}
+
+.header {
+  /*HEADER*/
+  height: 450px;
+  color: white;
+  background-image: url(http://images6.fanpop.com/image/photos/40000000/apps-for-business-eraashu001-40063496-1920-650.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 15px 1px black;
+}
+.header h1 {
+  margin: 0 0 0 0;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+.header p {
+  margin: 0 0 0 0;
+  font-size: 27px;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.header-menu {
+  display: flex;
+  position: relative;
+  top: 307px;
+  width: 100%;
+  justify-content: space-around;
+}
+.header-menu a {
+  position: relative;
+  margin: 0px 0 0px 0;
+  padding: 15px 20px 0px 20px;
+  display: block;
+  /*background-color: #252840;*/
+  /*border: 0.09em solid grey;*/
+  /*border-top: 0px;*/
+  font-size: 25px;
+  height: 30px;
+  color: white;
+  text-decoration-line: none;
+}
+.header-menu a:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  left: 0%;
+  margin-top: 3px;
+  background-color: #24263e;
+  /*background-color: #24263e;*/
+  transition: background-color 0.25s, margin 0.25s;
+  /*transition: width 0.1s, left 0.1s;*/
+}
+.header-menu a:hover {
+  margin-bottom: 20px;
+}
+.header-menu a:hover::after {
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 100%;
+  left: 0%;
+  margin-top: 3px;
+  background-color: #f2f2f2;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 2;
+  grid-row-gap: 30px;
+}
+
+.block {
+  /*A CLASS FOR ALL CONTENT-RELATED BLOCKS*/
+  display: block;
+  color: #24263e;
+  padding-bottom: 30px;
+  width: 92%;
+  min-height: 500px;
+  box-shadow: 0px 0px 9px 0.25mm rgba(0, 0, 0, 0.7);
+  margin: 30px 0 30px 3.5%;
+  background-color: #e2e2e2;
+}
+
+.heading {
+  font-size: 27px;
+  color: #24263e;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.content-text {
+  font-size: 20px;
+  text-indent: 0.5em;
+  margin: 20px 30px;
+}
+
+.intro {
+  display: block;
+  width: 92%;
+  min-height: 500px;
+  margin: 30px 0 0 3.5%;
+  box-shadow: 0px 0px 9px 0.25mm rgba(0, 0, 0, 0.7);
+}
+
+.calculator {
+  background-color: #eee;
+  width: 235px;
+  /*border: 1px solid black;*/
+  box-shadow: 0px 0px 9px 0.25mm rgba(0, 0, 0, 0.7);
+  margin: 40px;
+}
+.calculator .calcdisplay {
+  margin: 20px 10px 0 20px;
+  width: 194px;
+  height: 55px;
+  text-align: right;
+  font-size: 30px;
+}
+.calculator .calcdisplay[disabled] {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.calculator .calcnumpad {
+  border-spacing: 10px;
+  /*border: -5px solid transparent;*/
+  margin: 10px;
+}
+.calculator .calcbtn {
+  font-family: "FontAwesome", sans-serif;
+  background-color: #07f;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0.4px black;
+}
+.calculator .calcbtn.btn-equ {
+  height: 96px;
+  line-height: 96px;
+}
+.calculator .calcbtn:active {
+  box-shadow: 0px 0px 1px 0.4px black;
+}

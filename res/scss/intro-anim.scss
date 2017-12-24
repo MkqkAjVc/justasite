@@ -1,0 +1,97 @@
+$ray_range: 40%;
+$target_range: 650px;
+$left_mult: 0px;
+
+.intro-anim {
+  width: 90%;
+  height: 300px;
+  margin: 0 4.5%;
+  background: linear-gradient(0deg, #00ff00, #ff0000);
+  box-shadow: 10px 10px 30px 5px;
+  overflow: hidden;
+}
+
+.object {
+	position: relative;
+	background-color: black;
+}
+
+.head {
+	left: 90px+$left_mult;
+	top: 120px;
+	width: 100px;
+	height: 40px;
+}
+
+.gun {
+	left: 190px+$left_mult;
+	top: 150px;
+	width: 170px;
+	height: 20px;
+}
+
+.body {
+	left: 50px+$left_mult;
+	top: 120px;
+	width: 180px;
+	height: 75px;
+}
+
+.target {
+	background-image: url(http://kursoviks.com.ua/d/689517/d/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%94%D0%9F%D0%A2.jpg);
+	background-size: 100% 100%;
+	/*background-position: 50%;*/
+	background-color: transparent;
+	left: calc(61% + 0px);
+	top: -60px;
+	width: 250px;
+	height: 180px;
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	transform: rotate(20deg);
+	animation: sharagaexplode 1s 0.5s infinite;
+}
+
+.ray {
+	background-color: red;
+	left: 360px+$left_mult;
+	top: -157.8px;
+	width: 0%;
+	height: 4px;
+	/*-webkit-animation: rayanim 1s linear 1s infinite;
+	-o-animation: rayanim 1s linear 1s infinite;
+	animation: rayanim 1s linear 1s infinite;*/
+	/*transition: width 1s;*/
+	animation: rayanim 1s linear 0s infinite;
+	animation-direction: normal;
+}
+
+@keyframes rayanim {
+	0%{
+		width: 0%;
+	}
+	30%{
+		width: $ray_range;
+	}
+	100%{
+		width: $ray_range;
+	}
+}
+
+@keyframes sharagaexplode {
+	0%{
+		content: url(http://kursoviks.com.ua/d/689517/d/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%94%D0%9F%D0%A2.jpg);
+	}
+	70%{
+		/*background-image: url();*/
+		content: url(../img/explode.gif);
+	}
+	89%{
+		/*background-image: url();*/
+		content: url(../img/explode.gif);
+	}
+	90%{
+		content: url(http://kursoviks.com.ua/d/689517/d/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%94%D0%9F%D0%A2.jpg);
+	}
+}

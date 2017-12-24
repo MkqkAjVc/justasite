@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="res/css/style.css">
+	<link rel="stylesheet" type="text/css" href="res/css/intro-anim.css">
+	<link rel="stylesheet" type="text/css" href="res/css/font-awesome.css">
+	<link rel="icon" href="https://cs7.pikabu.ru/images/big_size_comm/2014-05_7/14015265911253.jpg">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="res/js/intro-gradient-rotate.js"></script>
+	<!-- <script type="text/javascript" src="res/js/intro-canvas-anim.js"></script> -->
+	<script type="text/javascript" src="res/js/calculator.js"></script>
+	<title>Just a Site</title>
+</head>
+<body>
+	<!-- Page-wrapper -->
+	<div class="page-wrapper">
+		<!-- Header -->
+		<header  class="header">
+			<h1 class="header-text">10/10 САЙТ</h1>
+			<p>Лучший в мире. Сам посмотри!</p>
+			<!-- Header-menu -  Главная - Контент - Разное - О сайте-->
+			<div class="header-menu">
+				<a href="#">Главная</a>
+				<a href="#">Контент</a>
+				<a href="#">Разное</a>
+				<a href="#">О сайте</a>
+			</div>
+		</header>
+		<content class="content">
+			<!-- Site intro (first section on page)-->
+			<section class="intro block">
+				<h1 class="heading">Вы находитесь на <s>самом обычном</s> <big>лучшем в мире</big> сайте, где некий васян постит свои поделки.</h1>
+				<p class="content-text">Здесь можно найти разное никому не нужное говно, например, вот это:</p>
+				<div class="intro-anim" width="600" height="300">
+					<div class="gun object"></div>
+					<div class="head object"></div>
+					<div class="body object"></div>
+					<div class="target object"></div>
+					<div class="ray object"></div>
+				</div>
+			</section>
+			<section class="block">
+				<div class="calculator">
+					<input value="0" type="text" disabled="disabled" class="calcdisplay">
+					<table class="calcnumpad">
+						<tr>
+							<td><button class="calcbtn ac">AC</button></td>
+							<td><button class="calcbtn b8">&#xf053</button></td>
+							<td><button class="calcbtn btn-div">/</button></td>
+							<td><button class="calcbtn btn-mult">*</button></td>
+						</tr>
+						<tr>
+							<td><button class="calcbtn btn-9">9</button></td>
+							<td><button class="calcbtn btn-8">8</button></td>
+							<td><button class="calcbtn btn-7">7</button></td>
+							<td><button class="calcbtn btn-7">-</button></td>
+						</tr>
+						<tr>
+							<td><button class="calcbtn btn-6">6</button></td>
+							<td><button class="calcbtn btn-5">5</button></td>
+							<td><button class="calcbtn btn-4">4</button></td>
+							<td><button class="calcbtn btn-7">+</button></td>
+						</tr>
+						<tr>
+							<td><button class="calcbtn btn-3">3</button></td>
+							<td><button class="calcbtn btn-2">2</button></td>
+							<td><button class="calcbtn btn-1">1</button></td>
+							<td rowspan="2"><button class="calcbtn btn-equ">=</button></td>
+						</tr>
+						<tr>
+							<td><button class="calcbtn btn-per">%</button></td>
+							<td><button class="calcbtn btn-0">0</button></td>
+							<td><button class="calcbtn btn-dot">.</button></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</content>
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
