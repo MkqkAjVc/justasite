@@ -6,9 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="res/css/intro-anim.css">
 	<link rel="stylesheet" type="text/css" href="res/css/font-awesome.css">
 	<link rel="icon" href="https://cs7.pikabu.ru/images/big_size_comm/2014-05_7/14015265911253.jpg">
+	<!-- jQuery -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- PIXI.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+	<!-- OTHERS -->
+	<script type="text/javascript" src="res/js/Testgame/collision.js"></script>
+	<script type="text/javascript" src="res/js/Testgame/testgame.js"></script>
 	<script type="text/javascript" src="res/js/intro-gradient-rotate.js"></script>
-	<!-- <script type="text/javascript" src="res/js/intro-canvas-anim.js"></script> -->
 	<script type="text/javascript" src="res/js/calculator.js"></script>
 	<title>Just a Site</title>
 </head>
@@ -51,7 +56,7 @@
 							<td><button class="calcbtn btn-mult">*</button></td>
 						</tr>
 						<tr>
-							<td><button class="calcbtn btn-9">9</button></td>
+							<td><button class="calcbtn btn-9">9</button></td>	
 							<td><button class="calcbtn btn-8">8</button></td>
 							<td><button class="calcbtn btn-7">7</button></td>
 							<td><button class="calcbtn btn-7">-</button></td>
@@ -74,6 +79,11 @@
 							<td><button class="calcbtn btn-dot">.</button></td>
 						</tr>
 					</table>
+				</div>
+			</section>
+			<section class="block">
+				<div id="game-wrapper">
+					
 				</div>
 			</section>
 		</content>
