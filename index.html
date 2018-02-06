@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- Main CSS Styles -->
 	<link rel="stylesheet" type="text/css" href="res/css/style.css">
+	<!-- CSS for intro animation -->
 	<link rel="stylesheet" type="text/css" href="res/css/intro-anim.css">
+	<!-- CSS for calculator -->
+	<link rel="stylesheet" type="text/css" href="res/css/calculator.css">
+	<!-- FontAwesome -->
 	<link rel="stylesheet" type="text/css" href="res/css/font-awesome.css">
+	<!-- Site icon -->
 	<link rel="icon" href="https://cs7.pikabu.ru/images/big_size_comm/2014-05_7/14015265911253.jpg">
+
 	<!-- jQuery -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- PIXI.js -->
@@ -48,37 +55,36 @@
 			<section class="block">
 				<div class="calculator">
 					<input value="0" type="text" disabled="disabled" class="calcdisplay">
-					<table class="calcnumpad">
-						<tr>
-							<td><button class="calcbtn ac">AC</button></td>
-							<td><button class="calcbtn b8">&#xf053</button></td>
-							<td><button class="calcbtn btn-div">/</button></td>
-							<td><button class="calcbtn btn-mult">*</button></td>
-						</tr>
-						<tr>
-							<td><button class="calcbtn btn-9">9</button></td>	
-							<td><button class="calcbtn btn-8">8</button></td>
-							<td><button class="calcbtn btn-7">7</button></td>
-							<td><button class="calcbtn btn-7">-</button></td>
-						</tr>
-						<tr>
-							<td><button class="calcbtn btn-6">6</button></td>
-							<td><button class="calcbtn btn-5">5</button></td>
-							<td><button class="calcbtn btn-4">4</button></td>
-							<td><button class="calcbtn btn-7">+</button></td>
-						</tr>
-						<tr>
-							<td><button class="calcbtn btn-3">3</button></td>
-							<td><button class="calcbtn btn-2">2</button></td>
-							<td><button class="calcbtn btn-1">1</button></td>
-							<td rowspan="2"><button class="calcbtn btn-equ">=</button></td>
-						</tr>
-						<tr>
-							<td><button class="calcbtn btn-per">%</button></td>
-							<td><button class="calcbtn btn-0">0</button></td>
-							<td><button class="calcbtn btn-dot">.</button></td>
-						</tr>
-					</table>
+					<div class="calcnumpad">
+						
+						<button class="calcbtn btn-ac">AC</button>
+						<button class="calcbtn btn-backspace">&#xf053</button>
+						<button class="calcbtn act_num_btn btn-div">÷</button>
+						<button class="calcbtn act_num_btn btn-mult">x</button>
+						
+						
+						<button class="calcbtn act_num_btn btn-9">9</button>	
+						<button class="calcbtn act_num_btn btn-8">8</button>
+						<button class="calcbtn act_num_btn btn-7">7</button>
+						<button class="calcbtn act_num_btn btn-7">-</button>
+						
+						
+						<button class="calcbtn act_num_btn btn-6">6</button>
+						<button class="calcbtn act_num_btn btn-5">5</button>
+						<button class="calcbtn act_num_btn btn-4">4</button>
+						<button class="calcbtn act_num_btn btn-7">+</button>
+						
+						
+						<button class="calcbtn act_num_btn btn-3">3</button>
+						<button class="calcbtn act_num_btn btn-2">2</button>
+						<button class="calcbtn act_num_btn btn-1">1</button>
+						<button class="calcbtn btn-equ">=</button>
+						
+						
+						<button class="calcbtn act_num_btn btn-per">%</button>
+						<button class="calcbtn act_num_btn btn-0">0</button>
+						<button class="calcbtn act_num_btn btn-dot">.</button>
+					</div>
 				</div>
 			</section>
 			<section class="block">
